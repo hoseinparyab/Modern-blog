@@ -1,4 +1,3 @@
-alert('test')
 var tns = (function (){
 var win = window;
 
