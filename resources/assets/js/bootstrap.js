@@ -10,10 +10,10 @@ opensSidebar();
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 // Bootstrap js
 import '../vendor/bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import './functions.js';
 import  './dark-themes.js';
 import './front/swiperSlideTrigger.js'
 
 // Template Functions
-import './functions.js';
+
 import.meta.glob(['../assets/images/**',]);
