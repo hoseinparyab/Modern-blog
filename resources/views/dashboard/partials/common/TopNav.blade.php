@@ -5,7 +5,7 @@ Nav START -->
     <nav class="navbar navbar-expand-xl">
         <div class="container">
             <!-- Logo START -->
-            <a class="navbar-brand me-3" href="index.html">
+            <a href="" class="navbar-brand me-3" >
                 <img class="navbar-brand-item light-mode-item" src="{{Vite::image('logo.svg')}}" alt="logo">
                 <img class="navbar-brand-item dark-mode-item" src="{{Vite::image('logo-light.svg')}}" alt="logo">
             </a>
@@ -57,77 +57,33 @@ Nav START -->
                     <!-- Notification dropdown menu START -->
                     <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0">
                         <div class="card bg-transparent">
-                            <div class="card-header bg-transparent border-bottom p-3 d-flex justify-content-between align-items-center">
-                                <h6 class="m-0">نوتیفیکیشن <span class="badge bg-danger bg-opacity-10 text-danger ms-2">2 خبر</span></h6>
-                                <a class="small" href="#">حذف</a>
-                            </div>
-                            <div class="card-body p-0">
-                                <ul class="list-group list-unstyled list-group-flush">
+                            <div class="card-body p-0 border-bottom ">
+                                <ul class="list-group list-unstyled list-group-flush m-3">
                                     <!-- Notif item -->
                                     <li>
-                                        <a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
-                                            <div class="me-3">
-                                                <div class="avatar avatar-sm">
-                                                    <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/08.jpg')}}" alt="avatar">
-                                                </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                                <h6 class="mb-1 flex-grow-1">ثبت دیدگاه جدید</h6>
+                                                <span class="badge bg-success me-2">2</span>
+                                                <i class="fa fa-times-circle text-danger"></i>
                                             </div>
-                                            <div>
-                                                <h6 class="mb-1">ثبت نام یک کاربر</h6>
-                                                <span class="small"> <i class="bi bi-clock"></i> 3 دقیقه پیش</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <!-- Notif item -->
-                                    <li>
-                                        <a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
-                                            <div class="me-3">
-                                                <div class="avatar avatar-sm">
-                                                    <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/02.jpg')}}" alt="avatar">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <h6 class="mb-1">حذف یک حساب کاربری</h6>
-                                                <span class="small"> <i class="bi bi-clock"></i> 6 دقیقه پیش</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <!-- Notif item -->
-                                    <li>
-                                        <a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
-                                            <div class="me-3">
-                                                <div class="avatar avatar-sm">
-                                                    <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/05.jpg')}}" alt="avatar">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <h6 class="mb-1">ثبت دیدگاه جدید</h6>
-                                                <span class="small"> <i class="bi bi-clock"></i> 10 دقیقه پیش</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <!-- Notif item -->
-                                    <li>
-                                        <a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
-                                            <div class="me-3">
-                                                <div class="avatar avatar-sm">
-                                                    <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/03.jpg')}}" alt="avatar">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <h6 class="mb-1">بروزرسانی تنظیمات کاربری</h6>
-                                                <span class="small"> <i class="bi bi-clock"></i> دیروز</span>
-                                            </div>
-                                        </a>
                                     </li>
                                 </ul>
+
                             </div>
-                            <!-- Button -->
-                            <div class="card-footer bg-transparent border-0 py-3 text-center position-relative">
-                                <a href="#" class="stretched-link">مشاهده تمام فعالیت ها</a>
+                            <div class="card-body p-0 ">
+                                <ul class="list-group list-unstyled list-group-flush m-3">
+                                    <!-- Notif item -->
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="mb-1 flex-grow-1">ثبت نام کاربر جدید</h6>
+                                            <span class="badge bg-success me-2">2</span>
+                                            <i class="fa fa-times-circle text-danger"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+
                             </div>
+
                         </div>
                     </div>
                     <!-- Notification dropdown menu END -->
@@ -138,7 +94,7 @@ Nav START -->
                 <div class="nav-item ms-2 ms-md-3 dropdown">
                     <!-- Avatar -->
                     <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/03.jpg')}}" alt="avatar">
+                        <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/vahid.jpeg')}}" alt="avatar">
                     </a>
 
                     <!-- Profile dropdown START -->
@@ -148,11 +104,11 @@ Nav START -->
                             <div class="d-flex align-items-center">
                                 <!-- Avatar -->
                                 <div class="avatar me-3">
-                                    <img class="avatar-img rounded-circle shadow" src="{{Vite::image('avatar/03.jpg')}}" alt="avatar">
+                                    <img class="avatar-img rounded-circle shadow" src="{{Vite::image('avatar/vahid.jpeg')}}" alt="avatar">
                                 </div>
                                 <div>
-                                    <a class="h6 mt-2 mt-sm-0" href="#"> علیرضا مرادی</a>
-                                    <p class="small m-0">example@gmail.com</p>
+                                    <a class="h6 mt-2 mt-sm-0" href="#">وحید صالحی</a>
+                                    <p class="small m-0">va.salehi@gmail.com</p>
                                 </div>
                             </div>
                             <hr>

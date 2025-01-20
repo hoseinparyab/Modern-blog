@@ -2,7 +2,7 @@
 @section('content')
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
-        @include('dashboard.partials.comments.all')
+        @include('dashboard.partials.news.edit')
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 @endsection

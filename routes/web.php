@@ -12,12 +12,15 @@ Route::group(['prefix' => '/dashboard'], function(){
         return view('dashboard.index');
     });
     Route::get('/news/comments',function (){
-       return view('dashboard.Comments');
+       return view('dashboard.comments');
     });
     Route::get('/news/category',function (){
-        return view('dashboard.catsNews');
+        return view('dashboard.category');
     });
     Route::get('/news/create',function (){
-        return view('dashboard.createNews');
+        return view('dashboard.create-article');
+    });
+    Route::get('/news/edit',function (){
+        return view('dashboard.editNews');
     });
 });

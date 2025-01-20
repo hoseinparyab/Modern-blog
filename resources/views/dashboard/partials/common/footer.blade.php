@@ -6,7 +6,7 @@ Footer START -->
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6">
                     <!-- Copyright -->
-                    <div class="text-center text-lg-start">©2022 ارائه شده در سایت <a href="https://www.rtl-theme.com/" class="text-reset btn-link" target="_blank">راست چین</a>
+                    <div class="text-center text-lg-start">©2022 ارائه شده در سایت <a href="https://www.rtl-theme.com/" class="text-reset btn-link" target="_blank"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 d-sm-flex align-items-center justify-content-center justify-content-lg-end">
@@ -37,16 +37,20 @@ Footer END -->
 
 <!-- Back to top -->
 <div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
-
+@if(session()->has('error'))
+    @include('notifications.errorMessageSession')
+@endif
+@if(session()->has('success'))
+    @include('notifications.successMessageSession')
+@endif
 <!-- =======================
 JS libraries, plugins and custom scripts -->
 
+<!-- Bootstrap JS -->
 
 <!-- Vendors -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.27.3/apexcharts.min.js" integrity="sha512-nKTh1Ik8Kzbrxo9A6xOBtEbzdNYcjI4Pr5XE88sNJQk87sY8mBlUfh61lYm0i710r5mGcIZ9tWSwORQbQ4plQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.27.3/apexcharts.min.js"></script>
 <script src="assets/vendor/overlay-scrollbar/js/OverlayScrollbars.min.js"></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
 </body>
-
 </html>

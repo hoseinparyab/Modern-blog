@@ -1,5 +1,3 @@
-
-
 <div class="col-12">
     <!-- Blog list table START -->
     <div class="card border bg-transparent rounded-3">

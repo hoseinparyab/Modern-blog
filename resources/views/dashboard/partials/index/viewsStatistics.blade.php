@@ -1,4 +1,3 @@
-
 <div class="col-md-6 col-xxl-4">
     <div class="card border h-100">
 
