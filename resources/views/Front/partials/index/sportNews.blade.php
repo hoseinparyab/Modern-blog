@@ -1,8 +1,7 @@
 <section class="my-4 pb-0 card-grid ">
     <div class="container pe-0">
         <div class="d-flex justify-content-between align-items-baseline">
-            <p class="fw-bold mb-3 fs-5 position-relative news-section-title">اخبار <span class="fw-normal fs-6">ورزشی</span>
-            </p>
+            <p class="fw-bold mb-3 fs-5 position-relative news-section-title">اخبار <span class="fw-normal fs-6">ورزشی</span></p>
             <div class="border-bottom border-primary border-2 opacity-1" style="width: 75%;"></div>
         </div>
         <div class="swiper" dir="rtl">
@@ -13,8 +12,7 @@
                     <div class="card bg-lights p-4" style="box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);">
                         <!-- Card img -->
                         <div class="position-relative">
-                            <img class="card-img" style="margin-top: -60px;"
-                                 src="{{Vite::image('blog/4by3/01.jpg')}}"
+                            <img class="card-img" style="margin-top: -60px;" src="{{Vite::image('blog/4by3/04.jpg')}}"
                                  alt="Card image">
                             <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                 <!-- Card overlay bottom -->
@@ -45,8 +43,7 @@
                                     <div class="nav-link">
                                         <div class="d-flex align-items-center position-relative">
                                             <div class="avatar avatar-xs">
-                                                <img class="avatar-img rounded-circle"
-                                                     src="{{Vite::image('avatar/vahid.jpeg')}}"
+                                                <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/vahid.jpeg')}}"
                                                      alt="avatar">
                                             </div>
                                             <span class="ms-3"><a href="#"
@@ -64,8 +61,7 @@
                     <div class="card bg-lights p-4" style="box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);">
                         <!-- Card img -->
                         <div class="position-relative">
-                            <img class="card-img" style="margin-top: -60px;"
-                                 src="{{Vite::image('blog/4by3/01.jpg')}}"
+                            <img class="card-img" style="margin-top: -60px;" src="{{Vite::image('blog/4by3/05.jpg')}}"
                                  alt="Card image">
                             <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                 <!-- Card overlay bottom -->
@@ -97,8 +93,7 @@
                                     <div class="nav-link">
                                         <div class="d-flex align-items-center position-relative">
                                             <div class="avatar avatar-xs">
-                                                <img class="avatar-img rounded-circle"
-                                                     src="{{Vite::image('avatar/vahid.jpeg')}}"
+                                                <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/vahid.jpeg')}}"
                                                      alt="avatar">
                                             </div>
                                             <span class="ms-3"><a href="#"
@@ -116,8 +111,7 @@
                     <div class="card bg-lights p-4" style="box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);">
                         <!-- Card img -->
                         <div class="position-relative">
-                            <img class="card-img" style="margin-top: -60px;"
-                                 src="{{Vite::image('blog/4by3/01.jpg')}}"
+                            <img class="card-img" style="margin-top: -60px;" src="{{Vite::image('blog/4by3/06.jpg')}}"
                                  alt="Card image">
                             <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                 <!-- Card overlay bottom -->
@@ -149,8 +143,7 @@
                                     <div class="nav-link">
                                         <div class="d-flex align-items-center position-relative">
                                             <div class="avatar avatar-xs">
-                                                <img class="avatar-img rounded-circle"
-                                                     src="{{Vite::image('avatar/vahid.jpeg')}}"
+                                                <img class="avatar-img rounded-circle" src="{{Vite::image('avatar/vahid.jpeg')}}"
                                                      alt="avatar">
                                             </div>
                                             <span class="ms-3"><a href="#"
@@ -172,5 +165,7 @@
             <!-- <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div> -->
         </div>
+        <div class="d-flex justify-content-end">
+            <a href="" class="inline-block text-black-50">مقالات بیشتر <i class="bi bi-chevron-left ms-2 align-middle"></i></a>
     </div>
 </section>

@@ -1,1 +1,5 @@
-import './bootstrap.js';
+import './bootstrap';
+
+// document.addEventListener('click',function () {
+//     alert('Hi');
+// })

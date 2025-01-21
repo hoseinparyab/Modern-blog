@@ -7,8 +7,7 @@
                 <div class="d-sm-flex align-items-center text-center text-sm-start">
                     <!-- Title -->
                     <div class="badge bg-primary p-2 px-3">امروز : ۳۰ تیرماه ۱۴۰۳</div>
-                    <marquee behavior="" direction="right" width="100%" onmouseover="this.stop();"
-                             onmouseout="this.start();">
+                    <marquee behavior=""  direction="right" width="100%" onmouseover="this.stop();" onmouseout="this.start();">
 
                         <span class="nav-item me-2">سلام</span>
                         <span class="nav-item me-2">sdsfsdfdfsd</span>
@@ -29,8 +28,6 @@
 
 
                     </marquee>
-
-
                     <!-- Slider -->
                     <!-- <div class="tiny-slider arrow-end arrow-xs arrow-white arrow-round arrow-md-none">
                         <div class="tiny-slider-inner"

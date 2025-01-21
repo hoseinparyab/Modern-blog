@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Front.index');
-});
+//Routes for the frontend
+Route::view('/', 'front.index')->name('home');
 
 //Dashboard Routes
 Route::group(['prefix' => '/dashboard'], function(){
@@ -24,3 +24,9 @@ Route::group(['prefix' => '/dashboard'], function(){
         return view('dashboard.editNews');
     });
 });
+
+//Auth Routes
+Route::View('/register', 'auth.register')->name('register');
+Route::post('/register',[AuthController::class,'register',]);
+
+Route::View('/login', 'dashboard.login')->name('login');

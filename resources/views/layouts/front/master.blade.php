@@ -1,9 +1,13 @@
-@include('Front.partials.common.header')
-@include('Front.partials.common.sidebarOffCanvasMain')
-@include('Front.partials.common.topNav')
-@yield('content')
-@include('Front.partials.common.bottomNav')
-@include('Front.partials.common.profile')
-@include('Front.partials.common.bookmark')
-@include('Front.partials.common.footer')
 
+@include('front.partials.common.header')
+@auth()
+@include('front.partials.common.sidebarOffCanvasMain')
+@endauth
+@include('front.partials.common.topNav')
+@yield('content')
+@include('front.partials.common.bottomNav')
+@auth()
+@include('front.partials.common.profile')
+@include('front.partials.common.bookmark')
+@endauth
+@include('front.partials.common.footer')

@@ -1,13 +1,11 @@
 
     const storedTheme = localStorage.getItem('theme')
-
     const getPreferredTheme = () => {
     if (storedTheme) {
     return storedTheme
 }
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
-
     const setTheme = function (theme) {
     if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.documentElement.setAttribute('data-bs-theme', 'dark')
@@ -20,7 +18,7 @@
 
     window.addEventListener('DOMContentLoaded', () => {
     var el = document.querySelector('.theme-icon-active');
-    if (el != 'undefined' && el != null) {
+    if(el != 'undefined' && el != null) {
     const showActiveTheme = theme => {
     const activeThemeIcon = document.querySelector('.theme-icon-active use')
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
@@ -51,7 +49,24 @@
     showActiveTheme(theme)
 })
 })
-
 }
-})
+});
 
+export function sideBarOpenClose() {
+    document.body.addEventListener('click', function(){
+        document.getElementById("main").style.cssText = "margin: 0;"
+    }, true);
+
+    function closedSidebar() {
+        document.getElementById("main").style.cssText = "margin: 0;";
+
+    }
+    function openedSidebar() {
+        const mediaQuery = window.matchMedia('(min-width: 768px)')
+        if (mediaQuery.matches) {
+            document.getElementById("main").style.cssText = "margin: 0 -260px 0 0;";
+        }else{
+            document.getElementById("main").style.cssText = "margin: 0 -750px 0 0;";
+        }
+    }
+}

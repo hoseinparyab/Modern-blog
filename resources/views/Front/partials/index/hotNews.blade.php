@@ -11,10 +11,9 @@
         <div class="row">
             <!-- Recent post widget START -->
             <!-- Recent post item -->
-            <div class="col-md-6 card mb-3">
-                <div class="d-flex p-3"
-                     style="box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);border-radius: .7rem;">
-                    <img class="rounded w-25" src="{{Vite::image('blog/4by3/thumb/01.jpg')}}" alt="">
+            <div class="col-md-6 card mb-3" >
+                <div class="d-flex p-3" style="box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);border-radius: .7rem;">
+                    <img class="rounded w-25"  src="{{Vite::image('blog/4by3/thumb/01.jpg')}}" alt="">
                     <div class="d-flex flex-column justify-content-center ms-4">
                         <h6><a href="post-single-2.html" class="">خرید و فروش ارز در کانال
                                 37 هزار تومانی</a></h6>
@@ -58,8 +57,9 @@
             </div>
         </div>
         <!-- Recent post widget END -->
+<div class="d-flex justify-content-end mt-3">
+    <a href="" class="inline-block text-black-50">مقالات بیشتر <i class="bi bi-chevron-left ms-2 align-middle"></i></a>
+</div>
 
-
-    </div>
     </div>
 </section>

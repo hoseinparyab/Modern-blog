@@ -1,5 +1,5 @@
-
 <!-- Footer START  -->
+
 <footer class="bg-dark d-none d-lg-block">
     <div class="container pt-5 ">
         <!-- Widgets START -->
@@ -9,8 +9,7 @@
                 <h5 class="mb-4 text-white">اخبار اخیر</h5>
                 <!-- Item -->
                 <div class="mb-4 position-relative">
-                    <div><a href="#" class="badge text-bg-danger mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>اقتصاد</a>
-                    </div>
+                    <div><a href="#" class="badge text-bg-danger mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>اقتصاد</a></div>
                     <a href="post-single-3.html" class="btn-link text-white fw-normal">تقویم آزمون‌های علوم پزشکی</a>
                     <ul class="nav nav-divider align-items-center small mt-2 text-body-secondary">
                         <li class="nav-item position-relative">
@@ -22,10 +21,8 @@
                 </div>
                 <!-- Item -->
                 <div class="mb-4 position-relative">
-                    <div><a href="#" class="badge text-bg-info mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>فرهنگ</a>
-                    </div>
-                    <a href="post-single-3.html" class="btn-link text-white fw-normal">احتمال آغاز موج هشتم کرونا در
-                        کشور</a>
+                    <div><a href="#" class="badge text-bg-info mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>فرهنگ</a></div>
+                    <a href="post-single-3.html" class="btn-link text-white fw-normal">احتمال آغاز موج هشتم کرونا در کشور</a>
                     <ul class="nav nav-divider align-items-center small mt-2 text-body-secondary">
                         <li class="nav-item position-relative">
                             <div class="nav-link"><a href="#" class="stretched-link text-reset btn-link">وحید صالحی</a>
@@ -42,8 +39,7 @@
                     <div class="col-6">
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link pt-0" href="#">اخبار</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">اقتصاد <span
-                                        class="badge text-bg-danger ms-2">2</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">اقتصاد <span class="badge text-bg-danger ms-2">2</span></a></li>
                             <li class="nav-item"><a class="nav-link" href="#">فناوری و اطلاعات</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">اجتماعی</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">ورزش</a></li>
@@ -58,15 +54,14 @@
                 <p class="" style="color: #d0d4d9;">امروز : ۲۶ تیر ماه ۱۴۰۳</p>
                 <ul class="nav flex-column" style="color: #d0d4d9;">
                     <li class="nav-item mb-3">روز جهانی برنامه نویس</li>
-                    <li class="nav-item mb-3">روز بزرگداشت حکیم عمر خیام</li>
-                    <li class="nav-item mb-3">روز بزرگداشت حکیم عمر خیام</li>
+                    <li class="nav-item mb-3">روز بزرگداشت حکیم عمر خیام </li>
+                    <li class="nav-item mb-3">روز بزرگداشت حکیم عمر خیام </li>
                 </ul>
             </div>
             <!-- Footer Widget -->
             <div class="col-sm-6 col-lg-3 mb-4">
                 <h5 class="mb-4 text-white">اپلیکیشن موبایل</h5>
-                <p class="text-body-secondary">برنامه را دانلود کنید و آخرین اخبار فوری و مقالات روزانه را دریافت
-                    کنید.</p>
+                <p class="text-body-secondary">برنامه را دانلود کنید و آخرین اخبار فوری و مقالات روزانه را دریافت کنید.</p>
                 <div class="row g-2">
                     <div class="col">
                         <a href="#"><img class="w-100" src="{{Vite::image('app-store.svg')}}" alt="app-store"></a>
@@ -106,19 +101,13 @@
                 <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
 
                     <ul class="nav d-flex flex-row-reverse justify-content-between align-items-end ">
-                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-telegram fa-fw me-2"
-                                                                                  style="font-size: 22px;"></i></a></li>
-                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-instagram fa-fw me-2"
-                                                                                  style="font-size: 22px;"></i></a>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-telegram fa-fw me-2" style="font-size: 22px;"></i></a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-instagram fa-fw me-2"  style="font-size: 22px;"></i></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-whatsapp fa-fw me-2"
-                                                                                  style="font-size: 22px;"></i></a></li>
-                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-twitter fa-fw me-2"
-                                                                                  style="font-size: 22px;"></i></a></li>
-                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-linkedin fa-fw me-2"
-                                                                                  style="font-size: 22px;"></i></a></li>
-                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-youtube fa-fw me-2"
-                                                                                  style="font-size: 22px;"></i></a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-whatsapp fa-fw me-2"  style="font-size: 22px;"></i></a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-twitter fa-fw me-2"  style="font-size: 22px;"></i></a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-linkedin fa-fw me-2"  style="font-size: 22px;"></i></a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-youtube fa-fw me-2"  style="font-size: 22px;"></i></a></li>
                     </ul>
                 </div>
 
@@ -130,17 +119,12 @@
 </footer>
 <!-- =======================
 Footer END -->
-<!-- bottom menu -->
-
-
+<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
 <!-- =======================
 JS libraries, plugins and custom scripts -->
 
+<!-- Vendors -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- Template Functions -->
-
-
 <!-- <script>
 	const pullToRefresh = document.querySelector('.pull-to-refresh');
 		let touchstartY = 0;
@@ -162,11 +146,16 @@ JS libraries, plugins and custom scripts -->
 			}
 		});
 </script> -->
-
-
+@error('success')
+@include('notifications.successMessage')
+@enderror()
+@if(session()->has('error'))
+    @include('notifications.errorMessageSession')
+@endif
+@if(session()->has('success'))
+    @include('notifications.successMessageSession')
+@endif
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
-
 </body>
-
 </html>

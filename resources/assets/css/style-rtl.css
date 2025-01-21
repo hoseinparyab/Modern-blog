@@ -20,8 +20,8 @@
 }
 @font-face {
 	font-family: vazir-bold;
-	src: url('../fonts/vazir/Vazir-Bold.eot');
-	src: url('../fonts/vazir/vazir-Blod.eot') format('embedded-opentype'), url('../fonts/vazir/Vazir-Bold-FD.woff') format('woff'), url('../fonts/vazir/Vazir-Bold.ttf') format('truetype');
+	src: url('../fonts/vazir/vazir-Bold.eot');
+	src: url('../fonts/vazir/vazir-Blod.eot') format('embedded-opentype'), url('../fonts/vazir/Vazir-Bold-FD.woff') format('woff'), url('../fonts/vazir/vazir-Bold.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal
 }
@@ -15810,7 +15810,9 @@ header .navbar-nav .nav-link.active:before {
 .navbar-dashboard .navbar-nav .nav-link.active:before {
   display: none;
 }
-
+/*.comment-edit{*/
+/*    display: none;*/
+/*}*/
 .navbar-vertical-compact {
   position: fixed;
   right: 0;
@@ -16737,12 +16739,15 @@ html.font-sm {
   }
 
 .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
-    left: 0;
+    left: 0!important;
     right: inherit;
   }
 
 .ql-editor {
-    text-align: right;
+    text-align: right!important;
+    font-size: 16px;
+    line-height: 2.2!important;
+    font-family: "IRANSans", sans-serif;
   }
 
 .ql-snow .ql-editor blockquote {
@@ -17781,4 +17786,26 @@ background-color: #efefef;
   --error: #E24D4C;
   --warning: #E9BD0C;
   --info: #3498DB;
+}
+/* Custom styles for pagination */
+.pagination .page-link {
+    margin: 0 8px;
+}
+.pagination .page-item.active .page-link {
+    background-color: #c9c9c9;
+    border-color: #c9c9c9;
+    color: white;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    padding: 6px 12px;
+}
+.pagination .page-item .page-link {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    padding: 6px 12px;
+}
+.pagination .page-item:first-child a,.pagination .page-item:last-child a{
+    padding: 5px 14px;
 }
