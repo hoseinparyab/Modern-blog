@@ -26,7 +26,10 @@ Route::group(['prefix' => '/dashboard'], function(){
 });
 
 //Auth Routes
+Route::View('/login', 'auth.login')->name('login');
+Route::post('/login',[AuthController::class,'login',]);
+
 Route::View('/register', 'auth.register')->name('register');
 Route::post('/register',[AuthController::class,'register',]);
 
-Route::View('/login', 'dashboard.login')->name('login');
+Route::post('/logout',[AuthController::class,'logout',]);
