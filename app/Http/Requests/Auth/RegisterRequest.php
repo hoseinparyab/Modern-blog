@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Auth;
 
+use App\Rules\GoogleCaptchaV3;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Password;
 
@@ -22,6 +23,7 @@ class RegisterRequest extends FormRequest
             'email'=> ['required', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed','email' ,'unique:users', Password::min(8)->max(12)
                 ->mixedCase()],
+            'g-recaptcha-response' => ['required', new GoogleCaptchaV3('submitRegister')],
         ];
 
     }
