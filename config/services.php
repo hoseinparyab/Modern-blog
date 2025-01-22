@@ -34,6 +34,16 @@ return [
         'siteKey' => env('GOOGLE_RECAPTCHA_V3_SITE_KEY'),
         'secretKey' => env('GOOGLE_RECAPTCHA_V3_SECRET_KEY'),
     ],
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT'),
+    ],
 
+    'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'redirect' => env('GITHUB_REDIRECT'),
+    ],
 
 ];

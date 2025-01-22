@@ -15,25 +15,19 @@ use Illuminate\Validation\Rules\Password;
 class AuthController extends Controller
 {
     // Register  or  Create new user
-    public function register(RegisterRequest $registerRequest)
-
+    public function register(RegisterRequest $request)
     {
-        //Create a new user
-        $user = User::create($registerRequest);
-        // User Login
-        if ($user){
-            Auth::login($user);
-            Mail::to($registerRequest->email)->send(new WelcomeMail(Auth::user(), $registerRequest->password));
-        }else{
-
-            return redirect()->back()->with('error','مشکلی در ثبت نام پیش آمده ، مجددا اقدام کنید');
-        }
-        //send Mail
-
-        //Redirect to home page
-        return redirect()->route('home')->withErrors([
-            'successLogin' => auth()->user()->name . ' .عزیز خوش آمدید'
+        //create new user
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' =>($request->password),
         ]);
+
+        //atomically login user after registration
+        Auth::login($user);
+
+        return redirect()->route('home')->with('success', 'ثبت‌نام شما با موفقیت انجام شد!');
     }
     public function login(LoginRequest $loginRequest): RedirectResponse
     {
