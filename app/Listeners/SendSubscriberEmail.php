@@ -14,7 +14,7 @@ class SendSubscriberEmail
      */
     public function __construct()
     {
-
+        //
     }
 
     /**
@@ -22,8 +22,12 @@ class SendSubscriberEmail
      */
     public function handle(UserSubscribed $event): void
     {
-        Mail::raw('باتشکر از شما برای عضویت در خبرنامه', function ($message)use ($event) {
-            $message->to($event->user->email)
-                ->subject('ثبت نام در خبرنامه با موفقیت انجام شد');
-        });    }
+        //dd('Listener Waiting ' . $event->name);
+        Mail::raw('با تشکر از شما بابت عضوبت در خبرنامه بلاگ زین',function ($message) use ($event){
+            $message->to($event->user->email);
+            $message->subject('خوش آمدید به خبرنامه بلاگ زین');
+
+        });
+
+    }
 }

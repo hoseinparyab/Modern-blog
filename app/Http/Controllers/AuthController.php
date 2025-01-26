@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\UserSubscribed;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
+use App\Listeners\SendWelcomeMail;
 use App\Mail\WelcomeMail;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
@@ -24,6 +26,9 @@ class AuthController extends Controller
             'password' =>($request->password),
         ]);
 
+        // ارسال ایمیل خوش‌آمدگویی
+//        event(new SendWelcomeMail($user));
+        event(new UserSubscribed($user));
         //atomically login user after registration
         Auth::login($user);
 
