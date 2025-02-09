@@ -27,9 +27,8 @@ class SendWelcomeMail
      */
     public function handle(Registered $event): void
     {
-        //
-        Mail::to($event->user->email)->send(new WelcomeMail($event->user,$event->password,true));
-//        SendWelcomeMailJob::dispatch($event->user,$event->password)->delay(now()->addMinutes(1));
+
+        SendWelcomeMailJob::dispatch($event->user,$event->password)->delay(now()->addMinutes(1));
 
     }
 }

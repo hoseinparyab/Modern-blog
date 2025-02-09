@@ -8,31 +8,46 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'front.index')->name('home');
 
 //Dashboard Routes
-Route::group(['prefix' => '/dashboard'], function(){
-    Route::get('/', function(){
+Route::group(['prefix' => '/dashboard'], function () {
+    Route::get('/', function () {
         return view('dashboard.index');
     });
-    Route::get('/news/comments',function (){
-       return view('dashboard.comments');
+    Route::get('/news/comments', function () {
+        return view('dashboard.comments');
     });
-    Route::get('/news/category',function (){
+    Route::get('/news/category', function () {
         return view('dashboard.category');
     });
-    Route::get('/news/create',function (){
+    Route::get('/news/create', function () {
         return view('dashboard.create-article');
     });
-    Route::get('/news/edit',function (){
+    Route::get('/news/edit', function () {
         return view('dashboard.editNews');
     });
 });
 
 //Auth Routes
 Route::View('/login', 'auth.login')->name('login');
-Route::post('/login',[AuthController::class,'login',]);
+Route::post('/login', [AuthController::class, 'login',]);
 Route::View('/register', 'auth.register')->name('register');
-Route::post('/register',[AuthController::class,'register',]);
+Route::post('/register', [AuthController::class, 'register',]);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Routes for auth social login-register
 Route::get('auth/{driver}/redirect', [SocialLoginController::class, 'redirect'])->name('auth.redirect');
 Route::get('auth/{driver}/callback', [SocialLoginController::class, 'callback'])->name('auth.callback');
+
+//Rest password routes
+//Route #1
+Route::view('/forgot-Password', 'auth.forgot-password')->name('password.request');
+//Route #2
+Route::post('/forgot-Password', [AuthController::class, 'sendResetPasswordLink'])->name('sendResetPasswordLink');
+//Route #3
+Route::get('/reset-password/{token}', [AuthController::class, 'resetPasswordToken'])->name('password.reset');
+//Route #4
+Route::get('/reset-password', [AuthController::class, 'passwordUpdate'])->name('password.update');
+
+
+
+
+
