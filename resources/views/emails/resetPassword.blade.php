@@ -6,13 +6,13 @@ margin: 0 auto;box-shadow: 0 0 5px 1px #f1eeee;overflow: hidden">
         <a href="{{$url}}" style="background: green;color: #fff;border-radius: 3px;padding: 4px ">بازیابی کلمه عبور</a>
         <p style="color: orange">مدت اعتبار لینک بازیابی کلمه عبور ۶۰ دقیقه می باشد.</p>
         <p style="color: blue">اگر این درخواست از جانب شما صورت نگرفته است آن را نادیده بگیرید</p>
-        <p>با احترام : پشتیبانی بلاگ زین</p>
+        <p>با احترام : پشتیبانی بلاگ مدرن</p>
         <hr>
         <p>اگر با کلیک روی دکمه بالا مشکل دارید می توانید روی لینک زیر کلیک کنید:
             {{$url}}
         </p>
     </div>
     <div class="mailFooter" style="display:flex;justify-content:center;align-items:center;height:48px;padding:0 20px;background: #f7f7f7;">
-        <a href="www.blogzine.com" style="text-decoration: none">www.blogzine.com</a>
+        <a href="www.blogmodern.com" style="text-decoration: none">www.blogmodern .com</a>
     </div>
 </div>
