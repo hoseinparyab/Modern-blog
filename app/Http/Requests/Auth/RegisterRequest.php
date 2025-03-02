@@ -17,16 +17,16 @@ class RegisterRequest extends FormRequest
     }
 
     public function rules()
-    {
-        return [
-            'name' => ['required', 'min:5','string', 'max:255'],
-            'email'=> ['required', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'confirmed','email' ,'unique:users', Password::min(8)->max(12)
-                ->mixedCase()],
-            'g-recaptcha-response' => ['required', new GoogleCaptchaV3('submitRegister',.5)],
-        ];
+{
+    return [
+        'name' => ['required', 'min:5','string', 'max:255'],
+        'email'=> ['required', 'email', 'max:255', 'unique:users'],
+        'password' => ['required', 'confirmed','email' ,'unique:users', Password::min(8)->max(12)
+            ->mixedCase()],
+        'g-recaptcha-response' => ['required', new GoogleCaptchaV3('submitRegister',.5)],
+    ];
 
-    }
+}
     public  function messages()
     {
         return [

@@ -10,6 +10,7 @@ use App\Http\Controllers\AuthController;
 //use App\Http\Controllers\dashboard\ArticleController;
 //use App\Http\Controllers\dashboard\CategoryController;
 //use App\Http\Controllers\dashboard\FileManagerController;
+use App\Http\Controllers\dashboard\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 //event(new \App\Events\UserSubscribed('For Email'));
@@ -36,23 +37,23 @@ Route::group([],function ()
 //Dashboard Routes
 Route::prefix('/dashboard')->middleware('auth')->group(function(){
     Route::middleware('role:admin')->group(function (){
-   Route::get('/',function (){
-        return view ('dashboard.index');
-    });
-   Route::get('/news',function (){
-      return view ('dashboard.allNews');
-   });
-  Route::get('/news/create',function (){
-       return view ('dashboard.createNews');
-   });
-   Route::get('/news/edit',function (){
-       return view ('dashboard.editNews');
-    });
-//      Route::get('/article/category',[CategoryController::class,'index'])->name('category.index');
-//       Route::post('/article/category',[CategoryController::class,'store']);
-//      Route::get('/article/category/edit/{id}',[CategoryController::class,'edit'])->name('category.edit');
-//      Route::put('/article/category/edit/{id}',[CategoryController::class,'update'])->name('category.update');
-//      Route::delete('/article/category/{id}',[CategoryController::class,'destroy'])->name('category.destroy');
+        Route::get('/',function (){
+            return view ('dashboard.index');
+        });
+        Route::get('/news',function (){
+            return view ('dashboard.allNews');
+        });
+        Route::get('/news/create',function (){
+            return view ('dashboard.createNews');
+        });
+        Route::get('/news/edit',function (){
+            return view ('dashboard.editNews');
+        });
+      Route::get('/news/category',[CategoryController::class,'index'])->name('category.index');
+       Route::post('/news/category',[CategoryController::class,'store']);
+      Route::get('/news/category/edit/{id}',[CategoryController::class,'edit'])->name('category.edit');
+      Route::put('/news/category/edit/{id}',[CategoryController::class,'update'])->name('category.update');
+      Route::delete('/news/category/{id}',[CategoryController::class,'destroy'])->name('category.destroy');
 
         //Route::resource('article',ArticleController::class,['only'=>['index','show']]);
         //Route::resource('article',ArticleController::class,['except'=>['index','show']]);
@@ -61,8 +62,8 @@ Route::prefix('/dashboard')->middleware('auth')->group(function(){
              'parameters'=>['article'=>'id'],
              'only'=>['index','show']
          ]);*/
-        //Route::patch('/news/category/edit/{id}',[CategoryController::class,'update'])->name('category.update');
-        //Route::post('/news/category/edit/{id}',[CategoryController::class,'update'])->name('category.update');
+        Route::patch('/news/category/edit/{id}',[CategoryController::class,'update'])->name('category.update');
+        Route::post('/news/category/edit/{id}',[CategoryController::class,'update'])->name('category.update');
         Route::get('/news/comments',function (){
             return view ('dashboard.comments');
         });
@@ -111,6 +112,6 @@ Route::prefix('/auth')->middleware('guest')->group(function() {
 //Auth Social Login-Register
 //Route::get('auth/{driver}/redirect',[SocialLoginController::class,'redirect'])->where('google|github');
 
-    Route::get('auth/{driver}/redirect', [SocialLoginController::class, 'redirect'])->name('auth.redirect');
-    Route::get('auth/{driver}/callback', [SocialLoginController::class, 'callback'])->name('auth.callback');
 });
+Route::get('auth/{driver}/redirect', [SocialLoginController::class, 'redirect'])->name('auth.redirect');
+Route::get('auth/{driver}/callback', [SocialLoginController::class, 'callback'])->name('auth.callback');
